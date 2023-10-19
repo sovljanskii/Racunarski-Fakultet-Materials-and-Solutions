@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int main(){
+    int n=11;
+    char c = 'A';
+    char czam=c;
+    int c1='a';
+    int raz = 'c'-'C';
+    int mala;
+    for (int i=0;i<n;i++) putchar(c);
+    printf("\n");
+    int a=1;
+    ///
+    
+    for (int i=1;i<n/2;i++){
+        c1++;
+        c+=a;
+        a++;
+        mala=0;
+        for (int j=0;j<i;j++){
+            printf("%c",c1);
+            mala++;
+        }
+        for (int j=0;j<n-mala*2;j++){
+            printf("%c",c);
+        }
+        for (int j=0;j<i;j++){
+            printf("%c",c1);
+        }
+        printf("\n");
+    }
+    if (n%2!=0){
+        c1++;
+        c+=a;
+        mala=0;
+        for (int j=0;j<n/2;j++){
+            printf("%c",c1);
+            mala++;
+        }
+        for (int j=0;j<n-mala*2;j++){
+            printf("%c",c);
+        }
+        for (int j=0;j<n/2;j++){
+            printf("%c",c1);
+        }
+        printf("\n");
+        c-=a;
+    }
+    
+    for (int i=n/2-1;i>0;i--){
+        c1++;
+        mala=0;
+        for (int j=0;j<i;j++){
+            printf("%c",c1);
+            mala++;
+        }
+                for (int j=0;j<n-mala*2;j++){
+            printf("%c",c);
+        }
+        for (int j=0;j<i;j++){
+            printf("%c",c1);
+        }
+        printf("\n");
+        a--;
+        c=c-a;
+        
+    }
+
+    
+    ///
+for (int i=0;i<n;i++) putchar(czam);
+    return 0;
+}
