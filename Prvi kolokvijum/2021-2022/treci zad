@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    int n=11;
+    int n;
+    scanf("%d",&n);
     char c = 'A';
     char czam=c;
     int c1='a';
