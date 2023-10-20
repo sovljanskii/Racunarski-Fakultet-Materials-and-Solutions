@@ -1,0 +1,90 @@
+#include <stdio.h>
+
+
+int main() {
+    char c;
+    int sum = 0;
+    while (c != '\n') {
+        c = getchar();
+        if (c == '(') {
+            int br1 = 0;
+            _Bool prvi = 1;
+            int min = 0;
+            while (c != ')') {
+                c = getchar();
+                if (c == ' ') {
+
+                    if (prvi && br1 % 2 == 0) {
+                        min = br1;
+
+                        prvi = 0;
+                        br1 = 0;
+                        continue;
+                    }
+                    if (br1 % 2 == 0 && br1 < min) {
+                        min = br1;
+                    }
+                    br1 = 0;
+                    continue;
+                }
+                if (c >= '0' && c <= '9')
+                    br1 = br1 * 10 + c - '0';
+            }
+            if (br1 % 2 == 0 && br1 < min) {
+                min = br1;
+            }
+            sum += min;
+            continue;
+        } else if (c == '{') {
+            int br1 = 0;
+            _Bool prvi = 1;
+            int min = 0, max = 0;
+            while (c != '}') {
+                c = getchar();
+                if (c == ' ' || c == '\n') {
+                    if (prvi) {
+                        min = br1;
+                        max = br1;
+                        prvi = 0;
+                        br1 = 0;
+                        continue;
+                    }
+                    if (br1 < min) {
+                        min = br1;
+                    }
+                    if (br1 > max) {
+                        max = br1;
+                    }
+                    br1 = 0;
+                    continue;
+                }
+                if (c >= '0' && c <= '9')
+                    br1 = br1 * 10 + c - '0';
+            }
+            if (prvi) {
+
+                continue;
+            }
+            if (br1 < min) {
+                min = br1;
+            }
+
+            if (br1 > max) {
+                max = br1;
+            }
+            sum += (max - min);
+            continue;
+        } else {
+            int br = 0;
+            while (c != ' ' && c != '\n') {
+
+                br = br * 10 + c - '0';
+                c = getchar();
+            }
+            sum += br;
+        }
+    }
+    printf("%d", sum);
+
+    return 0;
+}
