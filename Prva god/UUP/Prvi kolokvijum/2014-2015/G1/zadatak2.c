@@ -8,8 +8,8 @@ rezultat: ADfj
 */
 
 int main(){
-    char c=0;
-    char prosli=0;
+    char c;
+    char prosli=-1;
     while((c= getchar())!='\n'){
         if (c!=prosli-1&&c!=prosli+1&&c!=prosli+33&&c!=prosli-33){
             putchar(c);
