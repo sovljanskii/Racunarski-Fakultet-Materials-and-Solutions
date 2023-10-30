@@ -2,6 +2,17 @@
 #include <math.h>
 
 
+/*
+Napisati funkciju pom(int arg) koja proverava da li među sumama simetričnih
+cifara broja arg postoji suma koja je prost broj. Funkcija pom vraća n-ti prost broj, gde je
+broj n jednak najvećoj sumi simetričnih cifara koja je prost broj, ako takva suma ne postoji
+onda je broj n jednak broju cifara prosleđenog argumenta.
+Ispisati sve brojeve koje korisnik unese tako da su im cifre zarotirane ciklično za k mesta u
+desno, gde je k povratna vrednost funkcije pom. Korisnik unosi brojeve sve dok ne unese 0.
+Primer :Ulaz : 2543670 14862 14761 246 0
+Izlaz : 4367025 14862 61147 462
+*/
+
 int prost(int n){
     if (n==2) return 1;
     for (int i=2;i<n;i++){
