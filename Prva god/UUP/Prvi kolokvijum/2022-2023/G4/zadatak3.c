@@ -29,13 +29,13 @@ int main(){
     for (int j=0;j<n;j++){
         printSign('.',n-j-1);
                 if (j==n/2){
-            sred = ((n*2)-1)-(2*(n-j-1))-2;
+            sred = (n*2-1)-(2*(n-j-1))-2;
         }
         if (j==0) printf("^");
 
         else {
             printf("/");
-            printSign('*',((n*2)-1)-(2*(n-j-1))-2);
+            printSign('*',(n*2-1)-(2*(n-j-1))-2);
             printf("\\");
         }
         printSign('.',n-j-1);
