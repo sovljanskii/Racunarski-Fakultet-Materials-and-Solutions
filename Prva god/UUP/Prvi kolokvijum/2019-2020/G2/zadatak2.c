@@ -11,9 +11,6 @@ int main(){
                 zapocet_tag = 1;
                 break;
             case '>':
-                if (zapocet_tag==2) {
-
-                }
                 zapocet_tag = 0;
                 break;
             case 'a':
