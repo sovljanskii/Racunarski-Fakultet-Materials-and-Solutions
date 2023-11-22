@@ -13,63 +13,63 @@ Ograničenje : Posmatraju se samo pozitivni celi brojevi.
 Primer: Ulaz : Az(12895)2*&c22[1414](241)[78]
 Izlaz : Az(30745)2*&c22[0](651)[4]
  */
+int brojSDesne(int n){
+    int br=0;
+     int step=1;
+    int rezbr=0;
+    while (n){
+        int c=n%10;
+        if (c+rezbr>=10)br=(c+rezbr-10)*step+br;
+        else br=(c+rezbr)*step+br;  //3*1 3 , 2 2+3 * 10
+        rezbr=c;
+        step*=10;
+        n/=10;
+    }
+    return br;
+}
+int srednajzaga(int n){
+    int max=0;
+    int rez=n;
+    while (n){
+        if (max<n%10)max=n%10;
+        n=n/10;
+    }
+    n=rez;
+    n=n*n%max;
+    return n;
+}
 int main(){
     char c;
     int flag=0;
     int br=0;
-    int rezbr=0;
-    int max=0;
     while ((c=getchar())!='\n'){
-        switch (c){
-            case '(':
-                putchar('(');
-                flag=1;
-                break;
-            case '[':
-                putchar('[');
-                flag=2;
-                break;
-            case ')':
-                br+=rezbr;
-                printf("%d",br);
-                putchar(')');
-                rezbr=0;
-                br=0;
-                flag=0;
-                break;
-            case ']':
-                printf("%d",(int)pow(br,2) % max);
-                putchar(']');
-                max=0;
-                br=0;
-                flag=0;
-                break;
-            default:
-                if (c>='0'&&c<='9') {
-                    if (flag==1) {
-                        if (rezbr == 0) {
-                            rezbr = c - '0';
-                        } else {
-                            if (c-'0'+rezbr>9){
-                                br=br*10 + (c-'0'+rezbr-10)*10;
-                            }
-                            else br=br*10 + (c-'0'+rezbr)*10;
-                        }
-                        rezbr=c-'0';
-                    }
-                    else if (flag==2){
-                        br=br*10 +c-'0';
-                        if (c-'0'>max){
-                            max=c-'0';
-                        }
-                    }
-                    else putchar(c);
+        if (c=='('){
+            putchar(c);
+            flag=1;
+        }
+        else if (c=='['){
+            putchar(c);
+            flag=2;
+        }
+        else if (c==')' || c==']'){
+            if (flag==1){
+                printf("%d", brojSDesne(br));
+            }
+            else if (flag=2){
+                printf("%d", srednajzaga(br));
+            }
+            putchar(c);
+            flag=0;
+            br=0;
+        }
+        else {
+            if (flag ==0){
+                putchar(c);
+            }
+            else {
+                br=br*10+c-'0';
+            }
 
-
-                }
-                else putchar(c);
         }
     }
-
-    return 0;
 }
