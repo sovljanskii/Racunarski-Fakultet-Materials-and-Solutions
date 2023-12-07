@@ -12,9 +12,3 @@ int izbaciVeceCifre(int a, int k){
     }
     return br;
 }
-
-
-int main(){
-
-    return 0;
-}

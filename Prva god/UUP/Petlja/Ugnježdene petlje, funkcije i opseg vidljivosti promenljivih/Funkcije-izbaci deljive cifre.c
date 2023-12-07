@@ -17,9 +17,3 @@ int izbaciDeljiveCifre(int a, int k){
     }
     return br;
 }
-
-
-int main(){
-
-    return 0;
-}
