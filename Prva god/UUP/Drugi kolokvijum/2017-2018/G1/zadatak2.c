@@ -29,7 +29,7 @@ int napraviMat(int mat[][MAX],int n){
         int br=(10+mat[i][brc-1-i]-1)%10;
         for (int j=brc-2-i,a=0;j>=0;j--,a++){
             mat[i][j]= br;
-            if(a%2) br--;
+            if(a%2) br=(10+br-1)%10;
         }
     }
     for (int i=1;i<brc;i++){
