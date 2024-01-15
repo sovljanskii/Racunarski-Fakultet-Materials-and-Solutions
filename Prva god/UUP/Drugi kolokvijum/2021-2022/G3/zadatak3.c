@@ -5,14 +5,14 @@
 
 void stringSredi(char *str){
     int mark=0;
-    for (int i=1;i-1< strlen(str);i++){
+    for (int i=1;i <= strlen(str);i++){
         if (str[i]==' '||str[i]=='\n'){
             for (int j=0;j<=(i-1-mark)/2;j++){
                 if (str[mark+j] + j + 1>'9'){
                     str[mark+j] +=j-9;
                 }
                 else str[mark+j] +=j+1;
-                if (j!=(i-1-mark)/2) {
+                if (j!=(i-mark)/2) {
                     if (str[i - 1 - j] + j + 1 > '9') {
                         str[i - 1 - j] += j - 9;
                     } else str[i - 1 - j] += j + 1;
