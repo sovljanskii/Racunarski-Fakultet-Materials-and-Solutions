@@ -22,7 +22,6 @@ int checkStr(char *str,int base,int end){
                 br++;
             }
             if (br==2)break;
-
         }
         if (br<2){
             removeChar(str,i);
@@ -38,11 +37,12 @@ void srediStr(char *str){
     for (int i=0;str[i];i++){
         if (str[i]=='-'){
             base = checkStr(str,base,i-1) +2;
-
         }
     }
-    int a = checkStr(str,base, strlen(str));
-    if (a!=base)str[strlen(str)-1]=0;
+    int a= strlen(str);
+    checkStr(str,base, strlen(str));
+    if (a!= strlen(str))
+        str[strlen(str)-1]=0;
 }
 
 int main(){
