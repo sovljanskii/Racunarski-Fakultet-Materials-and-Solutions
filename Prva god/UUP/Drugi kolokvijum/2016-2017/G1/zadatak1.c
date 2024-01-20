@@ -11,8 +11,8 @@ double rek(int i, int n) {
 
 double ite(int n) {
     double res = 0;
-    for (int i = 1; i <= n; i++) {
-        res = sqrt(1.0 + i % 2) / i + res);
+    for (int i = n; i > 0; i--) {
+        res = sqrt(1.0*(2-i%2)/(n-i+1)+res);
     }
     return res;
 }
