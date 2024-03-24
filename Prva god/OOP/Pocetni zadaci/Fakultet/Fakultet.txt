@@ -1,0 +1,37 @@
+Fakultet 
+Napraviti Java aplikaciju koja simulira polaganje ispita na fakultetu. Student polaze ispit tako sto 
+odlucuje da li da prepise ili ne. Ukoliko nije spretan pri prepisivanju i dezurni profesor primeti da 
+prepisuje dobija 0 poena, ukoliko ga profesor ne primeti onda ima 100 poena (vervatnoca da ga  
+uhvate je 50%). Ukoliko student odluci da ne prepisuje onda dobija nasumicni broj poena na ispitu  (0-100). 
+Svakog studenta karakterise ime i prezime, indeks , podatak da li prepisuje na ispitima, broj  osvojenih poena 
+na ispitu i podatak da li je uhvacen u prepisivanju. Takodje svi studenti pripadaju  nekoj grupi, 
+pa zbog lakseg pregledanja ispita zelimo da studenti u istoj grupi polazu ispit zajedno.  
+
+TipStudenta (enum): 
+    • PREPISIVAC, NIJE_PREPISIVAC 
+Student (klasa): 
+• Atributi: 
+    o ime: String 
+    o prezime: String 
+    o tipStudenta: TipStudenta 
+    o index: String 
+    o brojPoenaNaIspitu: int 
+    o prepisivao: boolean 
+• Konstruktor: 
+    o Konstruktoru se prosledjuju vrednosti za ime, prezime, index i tip studenta • Metode: 
+    o radiIspit(): void - u atribut brojPoenaNaIspitu upisuje broj osvojenih poena i u  promenljivoj prepisivao zapisuje da li je uhvacen u prepisivanju 
+    o getBrojPoenaNaIspitu(): int - vraca broj osvojenih poena 
+    o isPrepisivao(): boolean - vraca da li je student prepisivao ili ne 
+Grupa (klasa): 
+• Atributi: 
+    o naziv: String 
+    o studenti: ArrayList<Student>  
+• Konstruktor: 
+    o Konstruktoru se prosledjuje vrednost za naziv grupe 
+• Metode: 
+    o odrziIspit(): void - svaki student iz grupe radi ispitu 
+    o ispisiStudente(): void - ispisuje sve studente u grupi 
+    o dodajStudenta(Student s): void - dodaje studenta u listu studenata 
+    o prosekPoenaNaIspitu(): double - vraca prosek poena na ispitu 
+    o brojStudenataKojiSuPrepisivali(): int - vraca broj studenata koji su prepisivali 
+Main (klasa): Sadrzi main metodu I proverava funkcionalnosti grupe I studenta
