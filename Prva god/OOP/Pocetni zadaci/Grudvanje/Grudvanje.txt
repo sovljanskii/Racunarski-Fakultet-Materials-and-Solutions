@@ -8,7 +8,7 @@ Snesko (klasa):
     o naziv: String 
     o snaga: int 
     o brojZivota: int 
-    • Konstruktor: 
+• Konstruktor: 
     o Konstruktoru se prosledjuju vrednosti za naziv, snagu i broj zivota 
 • Metode: 
     o pobedjen(): boolean - vraca true ili false u zavisnosti od toga da li je snesko pobedjen. Snesko  je pobedjen, ako mu je broj zivota jednak nuli  

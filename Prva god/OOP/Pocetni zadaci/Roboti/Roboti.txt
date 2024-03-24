@@ -1,0 +1,25 @@
+Jednog divnog dana ljudi su naisli na dva robota. To su bili najnapredniji roboti na planeti. 
+Roboti su  bili ofarbani jednom bojom, na ramenima se nalazio naziv robota i delovalo je kao da su napravljeni 
+od teskog materijala. Nasli su kontrolnu tablu robota, gde se nalazio spisak funkcionalnosti robota.  
+Robot je mogao da kaze koje je boje, da promeni boju, da kaze koja mu je tezina, da kaze koje mu je  ime, 
+da promeni ime i da isprica nesto o sebi. Medjutim roboti nisu reagovali na komande. 
+Nas zadatak je da popravimo robote tako da rade ispravno. 
+Boja (enum): 
+• PLAVA, ZUTA, CRVENA, ZELENA, ROZE 
+• Svaka boja ima hexCode 
+Robot (klasa): 
+• Atributi: 
+    o ime: String 
+    o boja: Boja 
+    o tezina: int 
+• Konstruktor: 
+    o Konstruktoru se prosledjuju vrednosti za ime, boju i tezinu 
+• Metode: 
+    o getIme(): String - vraca ime robota 
+    o getBoja(): Boja - vraca boju robota 
+    o getTezina(): int - vraca tezinu robota 
+    o setIme(String ime): void - menja ime robota 
+    o setBoja(Boja boja): void - menja boju robota 
+    o aboutMe(): void - ispisuje na konzolu neke podatke o robotu 
+
+Main klasa: Sadrzi main metodu i proverava funkcionalnosti robota
