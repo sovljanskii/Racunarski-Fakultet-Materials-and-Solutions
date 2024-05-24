@@ -1,0 +1,29 @@
+Introduction to Web Development,Technology>480 minutes:$99
+Digital Marketing Mastery,Business>720 minutes:$199
+Photography Fundamentals,Arts and Photography>240 minutes:$49
+Yoga for Beginners,Health and Fitness>360 minutes:$79
+Creative Writing Workshop,Writing and Literature>600 minutes:$129
+Project Management Essentials,Business>480 minutes:$129
+Italian Language and Culture Immersion,Languages>480 minutes:$99
+Internet of Things (IoT) and Smart Home Automation,Technology>600 minutes:$169
+Introduction to Data Science,Data Science>480 minutes:$149
+Creative Writing-Crafting Compelling Stories,Writing and Literature>480 minutes:$99
+Strength Training Fundamentals,Health and Fitness>240 minutes:$79
+Nutrition Essentials,Health and Fitness>360 minutes:$99
+Advanced Yoga Techniques,Health and Fitness>480 minutes:$129
+Mobile App Development with React Native,Technology>600 minutes:$169
+Nonfiction Writing Essentials,Writing and Literature>600 minutes:$109
+Poetry Writing Masterclass,Writing and Literature>360 minutes:$79
+Python for Data Analysis,Data Science>600 minutes:$129
+Financial Management for Entrepreneurs,Business>480 minutes:$129
+Screenwriting Fundamentals-Crafting Scripts for Film and TV,Writing and Literature>480 minutes:$99
+French Conversation and Pronunciation,Languages>720 minutes:$129
+Cloud Computing Fundamentals,Technology>480 minutes:$99
+Effective Leadership Skills,Business>360 minutes:$99
+Entrepreneurship and Startup Fundamentals,Business>720 minutes:$179
+German Grammar and Vocabulary,Languages>600 minutes:$109
+Cybersecurity Fundamentals,Technology>480 minutes:$149
+DevOps Fundamentals and Continuous Integration,Technology>600 minutes:$169
+Copywriting and Content Creation for Digital Platforms,Writing and Literature>720 minutes:$129
+Japanese Writing and Reading Comprehension,Languages>720 minutes:$129
+Italian Language and Culture Immersion,Languages>480 minutes:$99
