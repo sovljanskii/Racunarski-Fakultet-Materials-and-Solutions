@@ -8,7 +8,7 @@ you've come to the right place!
 <ol>
   <li> <a href="FirstYear">FirstYear</a></li>
      <ul>
-     <li><a href="FirstYear/UUP">Uvod u Programiranje (Introduction to Programming)<a/></li>
-       <li><a href="FirstYear/OOP">Objektno-Orijentisano programiranje(Object-oriented programming)<a/></li>
+     <li><a href="FirstYear/UUP (C)">Uvod u Programiranje (Introduction to Programming)<a/></li>
+       <li><a href="FirstYear/OOP (Java)">Objektno-Orijentisano programiranje(Object-oriented programming)<a/></li>
      </ul>
 </ol>
