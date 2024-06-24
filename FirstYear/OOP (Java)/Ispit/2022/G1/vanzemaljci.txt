@@ -1,0 +1,122 @@
+Kontinent: Evropa
+Francuska
+Grcka
+Italija
+Nemacka
+Rusija
+Spanija
+Srbija
+Kontinent: Azija
+Indija
+Japan
+Kina
+Kontinent: Afrika
+Egipat
+Kontinent: Severna Amerika
+SAD
+Kanada
+Kontinent: Juzna Amerika
+Brazil
+Argentina
+Kontinent: Australija
+Australija
+Kontinent: Antarktik
+IZGUBLJENI
+2;Evropa
+3;Evropa
+4;Australija
+6;Antarktik
+8;Severna Amerika
+16;Evropa
+18;Antarktik
+19;Afrika
+20;Azija
+22;Severna Amerika
+26;Afrika
+27;Australija
+32;Severna Amerika
+34;Severna Amerika
+36;Antarktik
+37;Azija
+38;Australija
+40;Severna Amerika
+43;Afrika
+46;Evropa
+47;Azija
+51;Australija
+53;Australija
+56;Australija
+59;Evropa
+60;Azija
+62;Australija
+68;Severna Amerika
+70;Antarktik
+71;Severna Amerika
+72;Australija
+77;Evropa
+80;Antarktik
+81;Afrika
+85;Severna Amerika
+87;Australija
+88;Antarktik
+90;Severna Amerika
+91;Severna Amerika
+95;Severna Amerika
+98;Australija
+99;Evropa
+PRONADJENI
+1;Srbija
+5;Egipat
+7;Australija
+9;Kina
+10;Nemacka
+11;Australija
+12;Egipat
+13;Grcka
+14;Egipat
+15;Egipat
+17;SAD
+21;Australija
+23;Indija
+24;Australija
+25;Argentina
+28;Kina
+29;Australija
+30;Brazil
+31;Spanija
+33;Australija
+35;Egipat
+39;Kina
+41;SAD
+42;Australija
+44;Italija
+45;Egipat
+48;Italija
+49;Italija
+52;Italija
+55;Spanija
+57;Brazil
+58;Nemacka
+61;Grcka
+63;Indija
+64;Grcka
+65;Srbija
+66;Kanada
+67;Indija
+69;Kanada
+73;Spanija
+74;Nemacka
+75;Australija
+76;Nemacka
+78;Australija
+79;Egipat
+82;Brazil
+83;Japan
+84;Australija
+86;Italija
+89;Kanada
+93;Egipat
+94;Australija
+96;Kina
+97;Australija
+100;Spanija
